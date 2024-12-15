@@ -24,6 +24,14 @@ function M.retrieve(not_math)
       { trig = "ali", name = "Align" },
       { t({ "\\begin{align*}", "\t" }), i(1), t({ "", ".\\end{align*}" }) }
     ),
+    s(
+      { trig = "dingli", name = "theorem" },
+      { t({ "\\begin{theorem}", "\t" }), i(1), t({ "", ".\\end{theorem}" }) }
+    ),
+    s(
+      { trig = "tuilun", name = "corollary" },
+      { t({ "\\begin{corollary}", "\t" }), i(1), t({ "", ".\\end{corollary}" }) }
+    ),
 
     parse_snippet({ trig = "beg", name = "begin{} / end{}" }, "\\begin{$1}\n\t$0\n\\end{$1}"),
     parse_snippet({ trig = "case", name = "cases" }, "\\begin{cases}\n\t$1\n\\end{cases}"),
