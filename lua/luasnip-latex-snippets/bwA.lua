@@ -26,11 +26,11 @@ function M.retrieve(not_math)
     ),
     s(
       { trig = "dingli", name = "theorem" },
-      { t({ "\\begin{theorem}", "\t" }), i(1), t({ "", ".\\end{theorem}" }) }
+      { t({ "\\begin{theorem}[$1]", "\t" }), i(2), t({ "", ".\\end{theorem} \n $0" }) }
     ),
     s(
       { trig = "tuilun", name = "corollary" },
-      { t({ "\\begin{corollary}", "\t" }), i(1), t({ "", ".\\end{corollary}" }) }
+      { t({ "\\begin{corollary}[$1]", "\t" }), i(2), t({ "", ".\\end{corollary} \n $0" }) }
     ),
 
     parse_snippet({ trig = "beg", name = "begin{} / end{}" }, "\\begin{$1}\n\t$0\n\\end{$1}"),
