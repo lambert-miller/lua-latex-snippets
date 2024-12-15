@@ -35,7 +35,7 @@ function M.retrieve(not_math)
     ),
     parse_snippet(
       { trig = "btab", name = "book table" },
-        "\\begin{table}[htpb] \n \t \\centering \n\t \\caption{${1:caption}} \n\t \\begin {tabular} \n\t \\toprule \n\t $0 \\midrule \n\t \\bottomrule \n \\end{tabular} ",
+      "\\begin{table}[htpb] \n \t \\centering \n\t \\caption{${1:caption}} \n\t \\begin {tabular} \n\t \\toprule \n\t $0 \\midrule \n\t \\bottomrule \n \\end{tabular} "
     ),
     parse_snippet({ trig = "beg", name = "begin{} / end{}" }, "\\begin{$1}\n\t$0\n\\end{$1}"),
     parse_snippet({ trig = "case", name = "cases" }, "\\begin{cases}\n\t$1\n\\end{cases}"),
