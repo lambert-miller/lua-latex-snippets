@@ -28,6 +28,8 @@ function M.retrieve(is_math)
 
     with_priority({ trig = "qie", name = "qie" }, "\\mbox{且} $0 "),
     with_priority({ trig = "huo", name = "huo" }, "\\mbox{或} $0 "),
+    with_priority({ trig = "ovl", name = "overline" }, "\\overline{$1} $0 "),
+    with_priority({ trig = "mod", name = "pmod" }, "\\pmod{$1} $0 "),
     parse_snippet(
       { trig = "abs", name = "absolute value \\abs{}" },
       "\\abs{${1:${TM_SELECTED_TEXT}}}$0"
