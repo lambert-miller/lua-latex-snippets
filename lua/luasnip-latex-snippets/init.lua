@@ -1,7 +1,7 @@
 local M = {}
 
 local default_opts = {
-    use_treesitter = false,
+    use_treesitter = true,
     allow_on_markdown = true,
 }
 
